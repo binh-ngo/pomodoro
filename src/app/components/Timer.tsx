@@ -101,7 +101,7 @@ const Timer = () => {
   return (
     <div className="flex flex-col h-screen items-center justify-center bg-inherit -mt-60">
       <div className="radio-buttons flex flex-row items-center justify-between mb-14">
-            <button onClick={handleResetButtonClick} className="font-medium mx-7 rounded-full p-4 text-blue-600 text-2xl bg-inherit hover:bg-white border-2 border-white">pomodoro</button>
+            <button className="font-medium mx-7 p-4 text-blue-600 text-2xl bg-inherit" disabled>pomodoro</button>
       </div>
       <div className="flex w-full justify-around">
         <Break

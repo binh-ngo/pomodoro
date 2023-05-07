@@ -23,7 +23,7 @@ const TimeLeft: React.FC<Props> = ({
       </p>
       <div className='flex-row justify-center'>
       <button
-        className="my-3 mx-3 text-blue-600 font-semibold bg-inherit border-2 hover:bg-white border-white px-4 py-2 rounded-full"
+        className="my-3 mx-2 text-blue-600 font-semibold bg-inherit border-2 hover:bg-white border-white px-4 py-2 rounded-full"
         id="start_stop"
         onClick={handleStartStopClick}
         >
