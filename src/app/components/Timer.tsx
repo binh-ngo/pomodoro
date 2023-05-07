@@ -76,13 +76,12 @@ const Timer = () => {
       // to do this we'll use setInterval
       const newIntervalId = setInterval(() => {
         setTimeLeft(prevTimeLeft => prevTimeLeft - 1);
-      }, 1000); 
+      }, 1000);
       setIntervalId(newIntervalId);
     }
   };
 
   const handleResetButtonClick = () => {
-    // reset audio
     // clear the timeout interval
     if (intervalId) {
       clearInterval(intervalId);
@@ -101,6 +100,9 @@ const Timer = () => {
 
   return (
     <div className="flex flex-col h-screen items-center justify-center bg-inherit -mt-60">
+      <div className="radio-buttons flex flex-row items-center justify-between mb-14">
+            <button onClick={handleResetButtonClick} className="font-medium mx-7 rounded-full p-4 text-blue-600 text-2xl bg-inherit hover:bg-white border-2 border-white">pomodoro</button>
+      </div>
       <div className="flex w-full justify-around">
         <Break
           breakLength={breakLength}
@@ -120,7 +122,7 @@ const Timer = () => {
           incrementSessionLengthByOneMinute={incrementSessionLengthByOneMinute}
         />
       </div>
-        <source src="https://onlineclock.net/audio/options/default.mp3" type="audio/mpeg" />
+      <source src="https://onlineclock.net/audio/options/default.mp3" type="audio/mpeg" />
     </div>
   );
 };
