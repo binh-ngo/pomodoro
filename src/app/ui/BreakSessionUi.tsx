@@ -5,7 +5,7 @@ export const BreakSessionContainer: React.FC<React.DetailedHTMLProps<
   HTMLDivElement
 >> = ({ children, ...props }) => {
   return (
-    <div className="flex flex-col items-center mx-10" {...props}>
+    <div className="flex flex-col items-center mx-10 phones:-mx-5 phones:mt-5" {...props}>
       {children}
     </div>
   );
@@ -49,7 +49,7 @@ export const PlusMinusButtonContainer: React.FC<React.DetailedHTMLProps<
   HTMLDivElement
 >> = ({ children, ...props }) => {
   return (
-    <div {...props} className="grid grid-flow-col mx-10 gap-2 rounded">
+    <div {...props} className="grid grid-flow-col phones:mx-0 mx-10 gap-2 rounded">
       {children}
     </div>
   );
