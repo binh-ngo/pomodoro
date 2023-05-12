@@ -38,7 +38,7 @@ export const PlusMinusButton: React.FC<React.DetailedHTMLProps<
   HTMLButtonElement
 >> = ({ children, ...props }) => {
   return (
-    <button {...props} className="mt-2 text-2xl active:bg-inherit hover:bg-white text-blue-600 bg-inherit border-2 border-white px-4 py-2 rounded sm-phones:px-2 sm-phones:py-0">
+    <button {...props} className="mt-2 text-2xl active:bg-inherit hover:bg-white text-blue-600 bg-inherit border-2 border-white px-4 py-2 rounded sm-phones:px-2 sm-phones:py-0 z-40">
       {children}
     </button>
   );

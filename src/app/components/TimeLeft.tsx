@@ -14,7 +14,7 @@ const TimeLeft: React.FC<Props> = ({
 }) => {
   const formattedTimeLeft = moment.duration(timeLeft, 's').format('mm:ss', { trim: false });
   return (
-    <div className="flex flex-col justify-evenly items-center w-64 h-64 bg-inherit rounded-full">
+    <div className="flex flex-col justify-evenly items-center w-64 h-64 bg-inherit rounded-full z-0">
       <div className='flex-row justify-center'>
       <button
         className="my-3 mx-2 text-3xl sm-phones:text-sm phones:text-lg text-blue-600 font-bold active:bg-inherit bg-inherit border-2 hover:bg-white border-white px-4 py-2 rounded-full"
