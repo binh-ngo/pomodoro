@@ -17,14 +17,14 @@ const TimeLeft: React.FC<Props> = ({
     <div className="flex flex-col justify-evenly items-center w-64 h-64 bg-inherit rounded-full">
       <div className='flex-row justify-center'>
       <button
-        className="my-3 mx-2 text-3xl phones:text-lg text-blue-600 font-bold active:bg-inherit bg-inherit border-2 hover:bg-white border-white px-4 py-2 rounded-full"
+        className="my-3 mx-2 text-3xl sm-phones:text-sm phones:text-lg text-blue-600 font-bold active:bg-inherit bg-inherit border-2 hover:bg-white border-white px-4 py-2 rounded-full"
         id="start_stop"
         onClick={handleStartStopClick}
         >
         {startStopButtonLabel}
       </button>
       <button
-        className="border-2 text-3xl phones:text-lg text-blue-600 font-bold rounded-full active:bg-inherit hover:bg-white border-white border-solid px-3 py-2"
+        className="border-2 text-3xl sm-phones:text-sm phones:text-lg text-blue-600 font-bold rounded-full active:bg-inherit hover:bg-white border-white border-solid px-3 py-2"
         id="reset"
         onClick={handleResetButtonClick}
       >

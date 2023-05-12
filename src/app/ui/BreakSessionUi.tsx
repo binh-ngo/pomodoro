@@ -5,7 +5,7 @@ export const BreakSessionContainer: React.FC<React.DetailedHTMLProps<
   HTMLDivElement
 >> = ({ children, ...props }) => {
   return (
-    <div className="flex flex-col items-center mx-10 phones:-mx-5 phones:mt-5" {...props}>
+    <div className="flex flex-col items-center mx-10 phones:-mx-5 phones:mt-5 sm-phones:-mx-12 sm-phones:mt-12" {...props}>
       {children}
     </div>
   );
@@ -16,7 +16,7 @@ export const BreakSessionLabel: React.FC<React.DetailedHTMLProps<
   HTMLParagraphElement
 >> = ({ children, ...props }) => {
   return (
-    <p className="text-lg text-blue-600" {...props}>
+    <p className="text-lg text-blue-600 sm-phones:text-sm" {...props}>
       {children}
     </p>
   );
@@ -38,7 +38,7 @@ export const PlusMinusButton: React.FC<React.DetailedHTMLProps<
   HTMLButtonElement
 >> = ({ children, ...props }) => {
   return (
-    <button {...props} className="mt-2 text-2xl active:bg-inherit hover:bg-white text-blue-600 bg-inherit border-2 border-white px-4 py-2 rounded">
+    <button {...props} className="mt-2 text-2xl active:bg-inherit hover:bg-white text-blue-600 bg-inherit border-2 border-white px-4 py-2 rounded sm-phones:px-2 sm-phones:py-0">
       {children}
     </button>
   );

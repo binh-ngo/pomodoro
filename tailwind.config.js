@@ -7,7 +7,8 @@ module.exports = {
   ],
   theme: {
     screens: {
-      'phones': {'max': '639px'}
+      'phones': {'max': '639px'},
+      "sm-phones": {'max': '400px'}
     },
     extend: {
       backgroundImage: {
